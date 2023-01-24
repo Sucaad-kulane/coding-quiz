@@ -1,4 +1,4 @@
-var Question = [
+var Questions = [
     {
         "titles": "Common Data Types Do Not Include;",
         "Choices": ["String", "Booleans", "alerts", "numbers"],
