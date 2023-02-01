@@ -15,7 +15,6 @@ var feedBackElement = document.getElementById("feedback");
 var titleElement = document.getElementById("question-title");
 // Sound
 
-var sfxCorrect = new Audio("assets/sfx/correct.wav");
 var sfxIncorrect = new Audio("assets/sfx/incorrect.wav");
 
 
@@ -29,11 +28,7 @@ function questionClick() {
         timerElement.textContent = time;
 
         feedBackElement.textContent = "wrong"    
-    } else {
-        sfxCorrect.play();
-        feedBackElement.textContent = "Correct!";
-    }
-
+    } 
     feedBackElement.setAttribute("class", "feedback");
     setTimeout(function(){
         feedBackElement.setAttribute("Class", "Feedback hide")
